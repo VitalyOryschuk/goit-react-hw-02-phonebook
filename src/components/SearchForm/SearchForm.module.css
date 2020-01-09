@@ -1,0 +1,32 @@
+.form {
+  margin: 0px 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.form>label {
+  color: rgb(173, 91, 173);
+
+}
+
+.input {
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.button {
+  width: 120px;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: gray;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 0;
+  color: purple;
+  font-weight: 600;
+}
