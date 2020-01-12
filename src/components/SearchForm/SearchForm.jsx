@@ -47,7 +47,7 @@ export default class SearchForm extends Component {
             Number
             <input
               className={styles.input}
-              type="text"
+              type="number"
               value={number}
               onChange={this.handleChange}
               id={this.numberInputId}
