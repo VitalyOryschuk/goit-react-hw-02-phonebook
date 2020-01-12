@@ -34,7 +34,7 @@ export default class App extends Component {
             contacts: [...state.contacts, contactToAdd],
           }));
     } else {
-      alert('Input name!');
+      alert('Input name please!');
     }
   };
 
@@ -55,11 +55,9 @@ export default class App extends Component {
       <div className={styles.container}>
         <h2 className={styles.title}>PhoneBook</h2>
         <SearchForm onChangeSubmit={this.handleSignUp} />
-        <h2 className={styles.title}>Contacts</h2>
+        {contacts.length > 0 && <h2 className={styles.title}>Contacts</h2>}
         {contacts.length > 2 && (
-          <>
-            <Filter value={filter} onChangeFilter={this.handleChangeFilter} />
-          </>
+          <Filter value={filter} onChangeFilter={this.handleChangeFilter} />
         )}
         <ContactsList items={filteredContacts} onDeleteContact={this.deleteContact} />
       </div>
