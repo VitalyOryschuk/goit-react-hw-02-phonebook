@@ -56,7 +56,7 @@ export default class App extends Component {
         <h2 className={styles.title}>PhoneBook</h2>
         <SearchForm onChangeSubmit={this.handleSignUp} />
         {contacts.length > 0 && <h2 className={styles.title}>Contacts</h2>}
-        {contacts.length > 2 && (
+        {contacts.length > 1 && (
           <Filter value={filter} onChangeFilter={this.handleChangeFilter} />
         )}
         <ContactsList items={filteredContacts} onDeleteContact={this.deleteContact} />
